@@ -18,6 +18,19 @@
   border: solid 1px #cac9c9;
 }
 
+.recommendation-area{
+    width: 146px;
+    height: 22px;
+    background-color: #363e40;
+    position: absolute;
+    top: 30px;
+    z-index: 10;
+    font-size: 11px;
+    font-weight: bold;
+    line-height:22px ;
+    color: white;
+  }
+
 .numeric-details {
   font-size: 14px;
 }
@@ -47,6 +60,7 @@
 .boat-image-container {
   flex: 3;
   text-align: center;
+  position: relative;
 }
 
 .boat-detail-status {

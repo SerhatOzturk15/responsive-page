@@ -6,12 +6,12 @@ class BoatView extends React.Component{
 
     render(){
 
-        return     <React.Fragment>
-        <div className="boat-container">
-        <BoatImage/>
-        <BoatDetails/>
-        </div>
-      </React.Fragment>
+        return (
+          <div className="boat-container">
+            <BoatImage />
+            <BoatDetails />
+          </div>
+        );
     }
 }
 

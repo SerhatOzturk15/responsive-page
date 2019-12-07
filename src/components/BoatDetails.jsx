@@ -12,11 +12,18 @@ class BoatDetails extends React.Component {
         <div className="boat-summary-first">
           <div className="name-city" style={{ flex: "5" }}>
             <div className="-centered-" style={{ flex: "5" }}>
-              <div><strong>Jeannau Sun Odyssey 45.2</strong> 2001</div>
+              <div>
+                <strong>Jeannau Sun Odyssey 45.2</strong> 2001
+              </div>
               <div>Split, Croatia</div>
             </div>
             <div className="-centered-" style={{ flex: "1" }}>
-              <img id="heart" alt="heart" src={heart} style={{ padding: "8px" }}></img>
+              <img
+                id="heart"
+                alt="heart"
+                src={heart}
+                style={{ padding: "8px" }}
+              ></img>
             </div>
           </div>
           <div style={{ flex: "2", color: "#de6449", padding: "0 8px" }}>
@@ -56,7 +63,7 @@ class BoatDetails extends React.Component {
           <div className="extra-details">
             <div className="extra-detail-item">
               <span>
-                <img src={check} alt="check" /> Sicherungsshein 
+                <img src={check} alt="check" /> Sicherungsshein
               </span>
               <span>
                 <img src={check} alt="check" /> Luxury
