@@ -1,0 +1,154 @@
+.boat-container {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px #cac9c9
+}
+
+.name-city{
+  flex: 5;
+  display: flex;
+  border: solid 1px #cac9c9;
+  padding: 0 8px;
+}
+
+.boat-detail {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  border: solid 1px #cac9c9;
+}
+
+.numeric-details {
+  font-size: 14px;
+}
+
+.boat-summary-first {
+  flex: 2;
+  display: flex;
+  background-color: #f8f8f8
+}
+.boat-summary-second {
+  flex: 2;
+  display: flex;
+  text-align: center;
+}
+.boat-summary-third {
+  flex: 2;
+  display: flex;
+  text-align: center;
+}
+#boat-image {
+  max-width: 95%;
+  max-height: 95%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+.boat-image-container {
+  flex: 3;
+  text-align: center;
+}
+
+.boat-detail-status {
+  flex: 1;
+  display: inline;
+}
+
+.-centered- {
+  top: 30%;
+  position: relative;
+}
+.boat-text-field {
+  flex: 1;
+  margin: 0 auto;
+  border: solid 1px #cac9c9;
+}
+
+.bigger-field {
+  flex:2;
+}
+
+#book, #price {
+  margin:auto;
+}
+.hot-text {
+  background-color: #de6449;
+  color:white;
+  font-size : 9px;
+  padding: 4px;
+  margin-right: 4px
+}
+
+.extra-details {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  flex: 3;
+  border: solid 1px #cac9c9;
+}
+
+.booking-price {
+  display: flex;
+  flex-direction: column;
+  flex:2;
+  border: solid 1px #cac9c9;
+}
+.extra-detail-item {
+  flex: 1;
+}
+
+.field-label {
+  color: #363e40;
+  margin: 0 8px;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.-uppercase- {
+  text-transform: uppercase;
+}
+
+.field-attr {
+  font-family: OpenSans;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+  .boat-container {
+    flex-direction: column;
+  }
+  .booking-price {
+    flex-direction: row;
+  }
+
+  .boat-summary-third{
+    flex-direction: column;
+  }
+
+  .extra-details {
+    flex-direction: row;
+  }
+
+  #boat-image {
+    transform: inherit;
+  }
+
+  .field-label {
+    display: block;
+  }
+
+  .booking-price{
+    flex-direction: row;
+  }
+
+  .boat-detail {
+    min-height: 400px;
+  }
+
+  #heart{
+    display: none;
+  }
+}
+
+
