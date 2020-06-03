@@ -10,12 +10,12 @@ class BoatDetails extends React.Component {
     return (
       <div className="boat-detail">
         <div className="boat-summary-first">
-          <div className="name-city" style={{ flex: "5" }}>
-            <div className="-centered-" style={{ flex: "5" }}>
-              <div>
-                <strong>Jeannau Sun Odyssey 45.2</strong> 2001
+          <div className="name-city">
+            <div className="-centered- name">
+              <div style={{ "height": "20px", "font-weight": 'bold' }}>
+                <span>Jeannau Sun Odyssey 45.2</span> <span style={{ "font-weight": 'normal', "letter-spacing": "0.27px" }}>2001</span>
               </div>
-              <div>Split, Croatia</div>
+              <div className="country-city">Split, Croatia</div>
             </div>
             <div className="-centered-" style={{ flex: "1" }}>
               <img
@@ -36,36 +36,36 @@ class BoatDetails extends React.Component {
         <div className="boat-summary-second">
           <div className="boat-text-field">
             <div className="-centered-">
-              <strong className="numeric-details">12.04m</strong>
-              <div>LENGTH</div>
+              <div className="numeric-details">12.04m</div>
+              <div className="inner-text-field">LENGTH</div>
             </div>
           </div>
           <div className="boat-text-field">
             <div className="-centered-">
-              <strong className="numeric-details">4</strong>
-              <div>CABINS</div>
+              <div className="numeric-details">4</div>
+              <div className="inner-text-field">CABINS</div>
             </div>
           </div>
           <div className="boat-text-field">
             <div className="-centered-">
-              <strong className="numeric-details">10</strong>
-              <div>GUESTS</div>
+              <div className="numeric-details">10</div>
+              <div className="inner-text-field">GUESTS</div>
             </div>
           </div>
           <div className="boat-text-field bigger-field">
             <div className="-centered-">
               <img src={stars} alt="stars" />
-              <div>3 REVIEWS</div>
+              <div className="inner-text-field">3 REVIEWS</div>
             </div>
           </div>
         </div>
         <div className="boat-summary-third">
           <div className="extra-details">
             <div className="extra-detail-item">
-              <span>
-                <img src={check} alt="check" /> Sicherungsshein
+              <span className='properties'>
+                <img src={check} alt="check" /> Sicher
               </span>
-              <span>
+              <span className='properties'>
                 <img src={check} alt="check" /> Luxury
               </span>
             </div>
@@ -82,17 +82,17 @@ class BoatDetails extends React.Component {
           </div>
           <div className="booking-price">
             <div id="price">
-              <span className="-uppercase-">From </span>
+              <span className="from-section">From </span>
               <strong> €1,083.00</strong>
-              <span> weekly</span>
-              <img src={help} alt="help" />
+              <span className="weekly-section"> weekly</span>
+              <img src={help} className="help-section" alt="help" />
             </div>
             <div id="book">
               <div>
                 <img style={{ marginRight: "8px" }} src={flash} alt="flash" />
-                <span>Direct Booking</span>
+                <span className="direct-booking">DIRECT BOOKING</span>
               </div>
-              <img src={viewDetails} alt="viewDetails" />
+              <img className='view-details' src={viewDetails} alt="viewDetails" />
             </div>
           </div>
         </div>

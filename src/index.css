@@ -1,24 +1,48 @@
-.boat-container {
-  display: flex;
-  flex-direction: row;
-  border: solid 1px #cac9c9
-}
-
-.name-city{
-  flex: 5;
-  display: flex;
-  border: solid 1px #cac9c9;
-  padding: 0 8px;
+body {
+    font-family: "Open Sans"
 }
 
 .boat-detail {
-  display: flex;
-  flex-direction: column;
-  flex: 4;
-  border: solid 1px #cac9c9;
+    min-height: 300px;
 }
 
-.recommendation-area{
+.boat-container {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px #cac9c9
+}
+
+.country-city {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.name-city {
+    flex: 5;
+    display: flex;
+    border: solid 1px #cac9c9;
+    padding: 0 8px;
+}
+
+.name {
+    flex: 5;
+}
+
+.boat-detail {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    border: solid 1px #cac9c9;
+}
+
+.inner-text-field {
+    color: #363e40;
+    opacity: 0.44;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.recommendation-area {
     width: 146px;
     height: 22px;
     background-color: #363e40;
@@ -27,142 +51,221 @@
     z-index: 10;
     font-size: 11px;
     font-weight: bold;
-    line-height:22px ;
+    line-height: 22px;
     color: white;
-  }
+}
 
 .numeric-details {
-  font-size: 14px;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: 600;
 }
 
 .boat-summary-first {
-  flex: 2;
-  display: flex;
-  background-color: #f8f8f8
+    flex: 2;
+    display: flex;
+    background-color: #f8f8f8
 }
+
 .boat-summary-second {
-  flex: 2;
-  display: flex;
-  text-align: center;
+    flex: 2;
+    display: flex;
+    text-align: center;
 }
+
 .boat-summary-third {
-  flex: 2;
-  display: flex;
-  text-align: center;
+    flex: 2;
+    display: flex;
+    text-align: center;
 }
+
 #boat-image {
-  max-width: 95%;
-  max-height: 95%;
-  top: 50%;
-  transform: translateY(-50%);
-  position: relative;
+    max-width: 95%;
+    max-height: 95%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
 }
+
 .boat-image-container {
-  flex: 3;
-  text-align: center;
-  position: relative;
+    flex: 3;
+    text-align: center;
+    position: relative;
 }
 
 .boat-detail-status {
-  flex: 1;
-  display: inline;
+    flex: 1;
+    display: inline;
+    font-size: 11px;
 }
 
 .-centered- {
-  top: 30%;
-  position: relative;
+    top: 30%;
+    position: relative;
 }
+
 .boat-text-field {
-  flex: 1;
-  margin: 0 auto;
-  border: solid 1px #cac9c9;
+    flex: 1;
+    margin: 0 auto;
+    border: solid 1px #cac9c9;
 }
 
 .bigger-field {
-  flex:2;
+    flex: 2;
 }
 
-#book, #price {
-  margin:auto;
+.direct-booking {
+    font-size: 10px;
+    font-weight: bold;
 }
+
+#price {
+    border-bottom: solid 1px #cac9c9;
+    border-right: solid 1px #cac9c9;
+    width: 100%;
+    padding: 10px 0;
+    flex: 3;
+}
+
+#book {
+    flex: 2;
+}
+
+#book,
+#price {
+    align-self: center;
+}
+
 .hot-text {
-  background-color: #de6449;
-  color:white;
-  font-size : 9px;
-  padding: 4px;
-  margin-right: 4px
+    background-color: #de6449;
+    color: white;
+    font-size: 9px;
+    padding: 4px;
+    margin-right: 4px;
+    font-weight: bold;
 }
 
 .extra-details {
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-  flex: 3;
-  border: solid 1px #cac9c9;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    flex: 3;
+    border: solid 1px #cac9c9;
+}
+
+.extra-detail-item>.properties {
+    margin: 0 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #363e40;
 }
 
 .booking-price {
-  display: flex;
-  flex-direction: column;
-  flex:2;
-  border: solid 1px #cac9c9;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    border: solid 1px #cac9c9;
 }
+
 .extra-detail-item {
-  flex: 1;
+    flex: 1;
+    padding: 8px;
 }
 
 .field-label {
-  color: #363e40;
-  margin: 0 8px;
-  font-size: 10px;
-  line-height: 16px;
-  text-transform: uppercase;
+    color: #363e40;
+    opacity: 0.44;
+    margin: 0 8px;
+    font-size: 10px;
+    line-height: 16px;
+    text-transform: uppercase;
 }
 
-.-uppercase- {
-  text-transform: uppercase;
+.from-section {
+    text-transform: uppercase;
+    color: #363e40;
+    opacity: 0.44;
+    font-size: 10px;
+    margin-right: 12px;
+}
+
+.weekly-section {
+    font-size: 11px;
+}
+
+.help-section {
+    margin-left: 32px;
 }
 
 .field-attr {
-  font-family: OpenSans;
-  font-size: 12px;
+    font-size: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.view-details {
+    width: 191px;
+    height: 36px;
 }
 
 @media only screen and (max-width: 800px) {
-  .boat-container {
-    flex-direction: column;
-  }
-  .booking-price {
-    flex-direction: row;
-  }
-
-  .boat-summary-third{
-    flex-direction: column;
-  }
-
-  .extra-details {
-    flex-direction: row;
-  }
-
-  #boat-image {
-    transform: inherit;
-  }
-
-  .field-label {
-    display: block;
-  }
-
-  .booking-price{
-    flex-direction: row;
-  }
-
-  .boat-detail {
-    min-height: 400px;
-  }
-
-  #heart{
-    display: none;
-  }
+    .boat-container {
+        flex-direction: column;
+    }
+    .booking-price {
+        flex-direction: row;
+    }
+    .from-section {
+        display: block;
+        text-align: start;
+        padding: 0 20px;
+    }
+    .country-city {
+        text-align: center;
+        line-height: 22px;
+    }
+    .boat-summary-third {
+        flex-direction: column;
+    }
+    #price {
+        border-bottom: unset;
+        flex: 3;
+    }
+    #book {
+        border-bottom: unset;
+        flex: 2;
+    }
+    #book,
+    #price {
+        flex: 1;
+    }
+    .name {
+        flex: unset;
+    }
+    .extra-detail-item>span {
+        display: block;
+    }
+    .extra-details {
+        flex-direction: row;
+    }
+    #boat-image {
+        transform: inherit;
+    }
+    .field-label {
+        display: block;
+    }
+    .booking-price {
+        flex-direction: row;
+    }
+    #heart {
+        display: none;
+    }
+    .view-details {
+        width: unset;
+        height: unset;
+    }
+    #book,
+    #price {
+        align-self: unset;
+    }
 }
-
-
